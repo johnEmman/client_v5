@@ -1,5 +1,5 @@
 // src/redux/roomActions.ts
-import { AppDispatch } from "./index";
+import { AppDispatch } from "./store";
 import axios from "axios";
 import { setParticipants, setMessage, setError } from "./roomSlice";
 

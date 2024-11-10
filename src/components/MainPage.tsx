@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../redux/index";
+import { RootState } from "../redux/store";
 import UserList from "./UserList";
 
 const MainPage = () => {
