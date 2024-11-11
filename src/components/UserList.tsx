@@ -7,7 +7,7 @@ const UserList = () => {
 
   const fetchUsers = async () => {
     try {
-      const response = await axios.get("https://192.168.1.20:4000/auth/users");
+      const response = await axios.get("https://192.168.212.126:4000/auth/users");
       setUsers(response.data.users);
     } catch (error) {
       setError("Error fetching users");

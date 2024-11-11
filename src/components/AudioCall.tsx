@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import io, { Socket } from "socket.io-client";
 
-const SERVER_URL = "https://192.168.1.20:5000"; // Update with your backend URL
+const SERVER_URL = "https://192.168.212.126:4000"; // Update with your backend URL
 
 export default function AudioCall() {
   interface SignalData {

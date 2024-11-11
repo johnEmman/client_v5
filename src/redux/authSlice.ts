@@ -29,9 +29,20 @@ const authSlice = createSlice({
       state.isGuest = false;
       state.isAuthenticated = false;
     },
+    signup: (
+      state,
+      action: PayloadAction<{ username: string; isGuest: boolean }>
+    ) => {
+      // After successful signup, we can treat the user as authenticated
+      state.username = action.payload.username;
+      state.isGuest = action.payload.isGuest;
+      state.isAuthenticated = true;
+    },
   },
 });
 
-export const { login, logout } = authSlice.actions;
+// Export actions
+export const { login, logout, signup } = authSlice.actions;
 
+// Export the reducer
 export default authSlice.reducer;
